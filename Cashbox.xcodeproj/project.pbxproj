@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2926CF365983C1EC6BEA132B /* Pods_CashboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB743E8E10DA087D3945008 /* Pods_CashboxTests.framework */; };
+		6A00649EEE6F873563389E56 /* Pods_Cashbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D2367905E57907D4AC810A /* Pods_Cashbox.framework */; };
+		F47DF5AB204EDC55000B5F06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47DF5AA204EDC55000B5F06 /* AppDelegate.swift */; };
+		F47DF5AD204EDC55000B5F06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47DF5AC204EDC55000B5F06 /* ViewController.swift */; };
+		F47DF5B0204EDC55000B5F06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47DF5AE204EDC55000B5F06 /* Main.storyboard */; };
+		F47DF5B2204EDC55000B5F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47DF5B1204EDC55000B5F06 /* Assets.xcassets */; };
+		F47DF5B5204EDC55000B5F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47DF5B3204EDC55000B5F06 /* LaunchScreen.storyboard */; };
+		F47DF5C0204EDC55000B5F06 /* CashboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47DF5BF204EDC55000B5F06 /* CashboxTests.swift */; };
+		F47DF5CC2050386B000B5F06 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47DF5CA2050386B000B5F06 /* SpotifyAudioPlayback.framework */; };
+		F47DF5CD2050386B000B5F06 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47DF5CB2050386B000B5F06 /* SpotifyAuthentication.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F47DF5BC204EDC55000B5F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F47DF59F204EDC55000B5F06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F47DF5A6204EDC55000B5F06;
+			remoteInfo = Cashbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01C114C72C915F96A726C572 /* Pods-Cashbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cashbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cashbox/Pods-Cashbox.debug.xcconfig"; sourceTree = "<group>"; };
+		3C26CD1951C6488E963DB854 /* Pods-Cashbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cashbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cashbox/Pods-Cashbox.release.xcconfig"; sourceTree = "<group>"; };
+		6FB743E8E10DA087D3945008 /* Pods_CashboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashboxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		831B16C120DA93A4438C1E24 /* Pods-CashboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashboxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CashboxTests/Pods-CashboxTests.release.xcconfig"; sourceTree = "<group>"; };
+		E123E6F4B4F986BF03DF53DA /* Pods-CashboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashboxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CashboxTests/Pods-CashboxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3D2367905E57907D4AC810A /* Pods_Cashbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cashbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47DF5A7204EDC55000B5F06 /* Cashbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cashbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47DF5AA204EDC55000B5F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F47DF5AC204EDC55000B5F06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F47DF5AF204EDC55000B5F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F47DF5B1204EDC55000B5F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F47DF5B4204EDC55000B5F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F47DF5B6204EDC55000B5F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47DF5BB204EDC55000B5F06 /* CashboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47DF5BF204EDC55000B5F06 /* CashboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashboxTests.swift; sourceTree = "<group>"; };
+		F47DF5C1204EDC55000B5F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47DF5CA2050386B000B5F06 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		F47DF5CB2050386B000B5F06 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		F47DF5CE205038FA000B5F06 /* Cashbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cashbox-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F47DF5A4204EDC55000B5F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A00649EEE6F873563389E56 /* Pods_Cashbox.framework in Frameworks */,
+				F47DF5CD2050386B000B5F06 /* SpotifyAuthentication.framework in Frameworks */,
+				F47DF5CC2050386B000B5F06 /* SpotifyAudioPlayback.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47DF5B8204EDC55000B5F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2926CF365983C1EC6BEA132B /* Pods_CashboxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		192A79F3DF34716820053F86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2367905E57907D4AC810A /* Pods_Cashbox.framework */,
+				6FB743E8E10DA087D3945008 /* Pods_CashboxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D2F677D5D0DE1BDC71FA9B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01C114C72C915F96A726C572 /* Pods-Cashbox.debug.xcconfig */,
+				3C26CD1951C6488E963DB854 /* Pods-Cashbox.release.xcconfig */,
+				E123E6F4B4F986BF03DF53DA /* Pods-CashboxTests.debug.xcconfig */,
+				831B16C120DA93A4438C1E24 /* Pods-CashboxTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F47DF59E204EDC55000B5F06 = {
+			isa = PBXGroup;
+			children = (
+				F47DF5A9204EDC55000B5F06 /* Cashbox */,
+				F47DF5BE204EDC55000B5F06 /* CashboxTests */,
+				F47DF5A8204EDC55000B5F06 /* Products */,
+				3D2F677D5D0DE1BDC71FA9B2 /* Pods */,
+				192A79F3DF34716820053F86 /* Frameworks */,
+				F47DF5CE205038FA000B5F06 /* Cashbox-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		F47DF5A8204EDC55000B5F06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F47DF5A7204EDC55000B5F06 /* Cashbox.app */,
+				F47DF5BB204EDC55000B5F06 /* CashboxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F47DF5A9204EDC55000B5F06 /* Cashbox */ = {
+			isa = PBXGroup;
+			children = (
+				F47DF5AA204EDC55000B5F06 /* AppDelegate.swift */,
+				F47DF5AC204EDC55000B5F06 /* ViewController.swift */,
+				F47DF5AE204EDC55000B5F06 /* Main.storyboard */,
+				F47DF5B1204EDC55000B5F06 /* Assets.xcassets */,
+				F47DF5B3204EDC55000B5F06 /* LaunchScreen.storyboard */,
+				F47DF5B6204EDC55000B5F06 /* Info.plist */,
+				F47DF5CA2050386B000B5F06 /* SpotifyAudioPlayback.framework */,
+				F47DF5CB2050386B000B5F06 /* SpotifyAuthentication.framework */,
+			);
+			path = Cashbox;
+			sourceTree = "<group>";
+		};
+		F47DF5BE204EDC55000B5F06 /* CashboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				F47DF5BF204EDC55000B5F06 /* CashboxTests.swift */,
+				F47DF5C1204EDC55000B5F06 /* Info.plist */,
+			);
+			path = CashboxTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F47DF5A6204EDC55000B5F06 /* Cashbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47DF5C4204EDC55000B5F06 /* Build configuration list for PBXNativeTarget "Cashbox" */;
+			buildPhases = (
+				427E36AD9B7DAD65AA797F3D /* [CP] Check Pods Manifest.lock */,
+				F47DF5A3204EDC55000B5F06 /* Sources */,
+				F47DF5A4204EDC55000B5F06 /* Frameworks */,
+				F47DF5A5204EDC55000B5F06 /* Resources */,
+				30CA86E21897D8841C8CA6E8 /* [CP] Embed Pods Frameworks */,
+				33E013628373B1C38A530E40 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cashbox;
+			productName = Cashbox;
+			productReference = F47DF5A7204EDC55000B5F06 /* Cashbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F47DF5BA204EDC55000B5F06 /* CashboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47DF5C7204EDC55000B5F06 /* Build configuration list for PBXNativeTarget "CashboxTests" */;
+			buildPhases = (
+				C5293CDDE3FE5FD3C634240B /* [CP] Check Pods Manifest.lock */,
+				F47DF5B7204EDC55000B5F06 /* Sources */,
+				F47DF5B8204EDC55000B5F06 /* Frameworks */,
+				F47DF5B9204EDC55000B5F06 /* Resources */,
+				409C42E6A4F9977FD5CF313C /* [CP] Embed Pods Frameworks */,
+				64AFD222B4163B6D13767DAE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F47DF5BD204EDC55000B5F06 /* PBXTargetDependency */,
+			);
+			name = CashboxTests;
+			productName = CashboxTests;
+			productReference = F47DF5BB204EDC55000B5F06 /* CashboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F47DF59F204EDC55000B5F06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Simon Lee";
+				TargetAttributes = {
+					F47DF5A6204EDC55000B5F06 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					F47DF5BA204EDC55000B5F06 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F47DF5A6204EDC55000B5F06;
+					};
+				};
+			};
+			buildConfigurationList = F47DF5A2204EDC55000B5F06 /* Build configuration list for PBXProject "Cashbox" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F47DF59E204EDC55000B5F06;
+			productRefGroup = F47DF5A8204EDC55000B5F06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F47DF5A6204EDC55000B5F06 /* Cashbox */,
+				F47DF5BA204EDC55000B5F06 /* CashboxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F47DF5A5204EDC55000B5F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47DF5B5204EDC55000B5F06 /* LaunchScreen.storyboard in Resources */,
+				F47DF5B2204EDC55000B5F06 /* Assets.xcassets in Resources */,
+				F47DF5B0204EDC55000B5F06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47DF5B9204EDC55000B5F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30CA86E21897D8841C8CA6E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Cashbox/Pods-Cashbox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cashbox/Pods-Cashbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33E013628373B1C38A530E40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cashbox/Pods-Cashbox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		409C42E6A4F9977FD5CF313C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashboxTests/Pods-CashboxTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		427E36AD9B7DAD65AA797F3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cashbox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64AFD222B4163B6D13767DAE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashboxTests/Pods-CashboxTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5293CDDE3FE5FD3C634240B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CashboxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F47DF5A3204EDC55000B5F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47DF5AD204EDC55000B5F06 /* ViewController.swift in Sources */,
+				F47DF5AB204EDC55000B5F06 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47DF5B7204EDC55000B5F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47DF5C0204EDC55000B5F06 /* CashboxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F47DF5BD204EDC55000B5F06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F47DF5A6204EDC55000B5F06 /* Cashbox */;
+			targetProxy = F47DF5BC204EDC55000B5F06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F47DF5AE204EDC55000B5F06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47DF5AF204EDC55000B5F06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F47DF5B3204EDC55000B5F06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47DF5B4204EDC55000B5F06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F47DF5C2204EDC55000B5F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F47DF5C3204EDC55000B5F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F47DF5C5204EDC55000B5F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C114C72C915F96A726C572 /* Pods-Cashbox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3LQ95726F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cashbox",
+				);
+				INFOPLIST_FILE = Cashbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simonlee.Cashbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cashbox-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F47DF5C6204EDC55000B5F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C26CD1951C6488E963DB854 /* Pods-Cashbox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3LQ95726F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Cashbox",
+				);
+				INFOPLIST_FILE = Cashbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simonlee.Cashbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cashbox-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F47DF5C8204EDC55000B5F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E123E6F4B4F986BF03DF53DA /* Pods-CashboxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3LQ95726F;
+				INFOPLIST_FILE = CashboxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simonlee.CashboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cashbox.app/Cashbox";
+			};
+			name = Debug;
+		};
+		F47DF5C9204EDC55000B5F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 831B16C120DA93A4438C1E24 /* Pods-CashboxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3LQ95726F;
+				INFOPLIST_FILE = CashboxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simonlee.CashboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cashbox.app/Cashbox";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F47DF5A2204EDC55000B5F06 /* Build configuration list for PBXProject "Cashbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47DF5C2204EDC55000B5F06 /* Debug */,
+				F47DF5C3204EDC55000B5F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47DF5C4204EDC55000B5F06 /* Build configuration list for PBXNativeTarget "Cashbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47DF5C5204EDC55000B5F06 /* Debug */,
+				F47DF5C6204EDC55000B5F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47DF5C7204EDC55000B5F06 /* Build configuration list for PBXNativeTarget "CashboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47DF5C8204EDC55000B5F06 /* Debug */,
+				F47DF5C9204EDC55000B5F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F47DF59F204EDC55000B5F06 /* Project object */;
+}

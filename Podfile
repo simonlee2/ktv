@@ -7,6 +7,7 @@ target 'Cashbox' do
 
   # Pods for Cashbox
   pod 'Kanna', '~> 4.0.0'
+  pod 'Spartan'
 
   target 'CashboxTests' do
     inherit! :search_paths

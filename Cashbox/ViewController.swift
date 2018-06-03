@@ -8,6 +8,7 @@
 
 import UIKit
 import Kanna
+import Spartan
 
 class ViewController: UIViewController {
     
@@ -16,6 +17,9 @@ class ViewController: UIViewController {
     var session:SPTSession!
     var player: SPTAudioStreamingController?
     var loginURL: URL?
+    
+    // pager
+    var playlistListPager: PagingObject<SimplifiedPlaylist>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +48,9 @@ class ViewController: UIViewController {
         
         self.session = firstTimeSesion
         
-        initializePlayer(authSession: self.session)
+        
+        
+//        initializePlayer(authSession: self.session)
     }
     
     func initializePlayer(authSession: SPTSession) {
@@ -116,19 +122,25 @@ class ViewController: UIViewController {
         
         return results
     }
+    
+    func loadPlaylists(completion: @escaping (PagingObject<SimplifiedPlaylist>) -> Void) {
+        _ = Spartan.getMyPlaylists(success: { (pagingObject) in
+            completion(pagingObject)
+        }, failure: { (error) in
+            print("Error loading playlists: \(error)")
+        })
+    }
 }
 
 extension ViewController: SPTAudioStreamingDelegate {
     func audioStreamingDidLogin(_ audioStreaming: SPTAudioStreamingController!) {
         print("logged in")
-        
-        self.player?.playSpotifyURI("spotify:track:58s6EuEYJdlb0kO7awm3Vp", startingWith: 0, startingWithPosition: 0, callback: { (error) in
-            if let error = error {
-                print(error)
-            } else {
-                print("playing")
-            }
-        })
+        loadPlaylists { (pagingObject) in
+            self.playlistListPager = pagingObject
+            pagingObject.items.map({ (playlist) -> String in
+                playlist.name
+            }).forEach({print($0)})
+        }
     }
 }
 

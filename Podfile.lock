@@ -1,12 +1,27 @@
 PODS:
+  - Alamofire (4.7.2)
+  - AlamofireObjectMapper (5.0.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.0)
+  - AlamoRecord (1.1.1):
+    - AlamofireObjectMapper (~> 5.0)
   - Kanna (4.0.0)
+  - ObjectMapper (3.1.0)
+  - Spartan (1.1.1):
+    - AlamoRecord (~> 1.1.1)
 
 DEPENDENCIES:
   - Kanna (~> 4.0.0)
+  - Spartan
 
 SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  AlamoRecord: 78653b9a5da21ab5bb723167e0f552994df85d30
   Kanna: d5ae2a26472f7e7a474e7f36a9cd8aa2c8c63ad3
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  Spartan: 0e2518f937e590b0dff19350db133110d676ddf0
 
-PODFILE CHECKSUM: 8a96445681cf5e6da9ebb24052f8e2d3d877607d
+PODFILE CHECKSUM: 7650f8a2c430a99737bd06494f6a207c689cbe3c
 
 COCOAPODS: 1.4.0
